@@ -62,6 +62,7 @@ $line=~s/# hint groups fully obeyed.+//g;
 $line=~s/# incompatible hint groups.+//g;
 $line=~s/# Sources of extrinsic.+//g;
 $line=~s/#     RM.+//g; 
+$line=~s/.+\-\-gff3\=on \-\-stopCodonExcludedFromCDS\=off//g;
 	if ($line=~/#/){
 	chomp $line;
 	$line=~s/\#//g;
