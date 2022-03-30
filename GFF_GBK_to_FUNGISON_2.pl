@@ -5,7 +5,7 @@ print "## GBK GFF TO FUNGISON				       ##\n";
 print "## A script to convert Augustus outputs in GFF3      ##\n";
 print "## and antismash v6 (gbk) files into CORASON format    ##\n";
 print "## by Pablo Cruz-Morales at DTU Biosustain 	       ##\n";
-print "## pcruzm@biosustain.dtu.dk                	       ##\n";
+print "## pcruzm\@biosustain.dtu.dk                	       ##\n";
 print "## December 2021				       ##\n";
 print "## Inputs: a GGF3 file with the AUGUSTUS gene calling   ##\n";
 print "##        a GBK file with the  ANTISMASH 6 annotation  ##\n";
@@ -16,13 +16,13 @@ print "#########################################################\n";
 if ($ARGV[0]=~/.+.gff/){
 	print "input Augustus gff3 file is $ARGV[0]\n";
 	}
-else {print "Error: did you entered a gff file?\nusage: perl GFF_GBK_to_FUNGISON file.gff file.gbk\n ";}
+else {print "Error\: did you entered a gff file?\nusage: perl GFF_GBK_to_FUNGISON file.gff file.gbk\n ";}
 
 if ($ARGV[1]=~/.+.gbk/){
 	print "input Antismash gbk file is $ARGV[1]\n";
 	}
 else {
-	print "Error: did you entered a gbk file?\nusage: perl GFF_GBK_to_FUNGISON file.gff file.gbk\n ";
+	print "Error\: did you entered a gbk file?\nusage: perl GFF_GBK_to_FUNGISON file.gff file.gbk\n ";
 	}
 #storing the file name for the outputs
 open FILE, $ARGV[0] or die "I cant open the augustus GFF3 file\n";
